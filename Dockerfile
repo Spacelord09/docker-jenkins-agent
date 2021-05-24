@@ -5,7 +5,7 @@ USER root
 RUN DEBIAN_FRONTEND=noninteractive apt-get update -y -qq && apt-get dist-upgrade -y -qq && rm -rf /var/lib/apt/lists/
 
 # Install base addon packages defined below.
-ENV packages="git maven"
+ENV packages="git zip maven"
 RUN DEBIAN_FRONTEND=noninteractive apt-get update -y -qq && apt-get install -y -qq $packages && rm -rf /var/lib/apt/lists/*
 
 # Install dependencies needed for https://github.com/cbdevnet/midimonster build.
