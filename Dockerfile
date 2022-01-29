@@ -1,4 +1,4 @@
-FROM jenkins/agent:latest-buster-jdk11
+FROM jenkins/agent:latest-bullseye-jdk11
 USER root
 
 # Updating the packages to the newest release.
